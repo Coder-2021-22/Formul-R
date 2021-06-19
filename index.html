@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TEST</title>
+
+        <style>
+            body {
+                margin: 0;
+                background-color: #D9E9D5;
+            }
+
+            div.all {
+                margin: 0;
+                padding: 50px 121px 50px 121px;
+                background-color: #D9E9D5;
+
+            }
+
+            div.contenu {
+                background-color: #FAF7F7;
+                padding: 70px 50px;
+                border-radius: 27px;
+            }
+
+            div.section {
+                background-color: white;
+                padding: 40px 40px;
+                border-radius: 27px;
+                box-shadow: -15px -12px 0 #165787;
+                position: relative;
+            }
+
+            div.contour {
+                border: 4px solid #165787;
+                border-radius: 27px;
+                padding: 20px;
+            }
+
+            p.titre {
+                position: absolute;
+                top: 8px;
+                left: 90px;
+                font-size: 18px;
+                font-family: Arial;
+                font-weight: bold;
+                color: #165787;
+                background-color: white;
+                padding: 5px 10px;
+            }
+
+            table {
+                width: 100%;
+                font-family: Arial;
+                color:#165787;
+            }
+
+            td.champs {
+                width: 20%;
+                vertical-align: top;
+            }
+
+            tr.tr {
+                margin-bottom: 10px;
+            }
+
+            input, textarea, select {
+                width : 100%;
+                margin: 0;
+
+                -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box; 
+                        box-sizing: border-box;
+                
+                background-color: white; 
+                color: black;
+                font-family: Arial;
+                border: 2px solid #165787;
+            }
+
+            p.btn {
+                width: 120px;
+                color: #165787;
+            }
+
+            input.input-btn {
+                font-size: 16px;
+                font-family: Arial;
+                color: #165787;
+                border-radius: 15px;
+                border: 3px solid #165787;
+                padding: 8px 20px;
+            }
+
+            input.input-btn:hover {
+                color: white;
+                background-color: #165787;
+            }
+
+            td.right {
+                vertical-align: middle;
+                text-align: right;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="all">
+            <div class="contenu">
+                <div class="section">
+                    <div class="contour">
+                        <p class="titre">Contact</p>
+                        <form method="post" action="traitement.php">
+                            <table> 
+                                <tr>
+                                    <td align="right" class="champs">Nom :</td>
+                                    <td class="input"><input type="text" name="Nom_prenom" size="25" maxlength="50"></td>
+                                </tr>
+                                <tr>
+                                    <td align="right" class="champs">Objet : </td>
+                                    <td class="input"> 
+                                        <select name="objet" style="color: #165787; background-color: white;">
+                                            <option>Réserver un jeu
+                                            <option>Signaler l'état d'un jeu
+                                            <option>Devenir bénévole
+                                            <option>Questions diverses
+                                            <option>Autre
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" class="champs">Message : </td>
+                                    <td class="input"><textarea name="message" rows="5" cols="30"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td align="right"><p class="btn"><input class="input-btn" type="submit" value="Soumettre"></p></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
